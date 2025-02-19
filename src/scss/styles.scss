@@ -1,0 +1,44 @@
+// Переменные
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$text-color: #333;
+$hover-color: darken($primary-color, 10%);
+$font-family: 'Arial', sans-serif;
+
+// Основные стили
+body {
+    font-family: $font-family;
+    color: $text-color;
+}
+
+.content-block {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    
+    h2 {
+        color: $primary-color;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        line-height: 1.6;
+    }
+}
+
+.custom-button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: $hover-color;
+    }
+} 
