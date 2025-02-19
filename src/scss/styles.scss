@@ -1,8 +1,10 @@
+@use "sass:color";
+
 // Переменные
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 $text-color: #333;
-$hover-color: darken($primary-color, 10%);
+$hover-color: color.adjust($primary-color, $lightness: -10%);
 $font-family: 'Arial', sans-serif;
 
 // Основные стили
